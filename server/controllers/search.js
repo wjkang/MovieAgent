@@ -1,16 +1,12 @@
 /**
  * Created by Administrator on 2017/6/29 0029.
  */
-
+const movie=require('../services/movie')
 module.exports={
     async search(ctx,text){
         console.log(ctx.params.keyword);
 
-       var result= await new Promise(function(reslove,reject){
-          setTimeout(function(){
-              reslove(ctx.params.keyword);
-          },3000)
-        })
+       var result= await movie.serach(ctx.params.keyword)
         ctx.body=result;
     }
 }
