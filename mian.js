@@ -1,5 +1,4 @@
 var request=require("request");
-var Iconv = require('iconv-lite');
 var request = request.defaults({jar: true});
 request.get('http://www.q2002.com/play/29769/1/1.html', function (err,httpResponse,body) {
     var options = {
