@@ -2,6 +2,8 @@
  * Created by Administrator on 2017/6/29 0029.
  */
 const request=require('request').defaults({jar: true})
+const host='http://www.q2002.com'
+
 let fetch=function(keyword){
     return new Promise((resolve,reject)=>{
         /*setTimeout(function(){
